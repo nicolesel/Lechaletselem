@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+body{
+    background-color: #D1C7AD;
+    justify-content: center;
+
+}
+h1,h2,h3{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 80px;
+    color: white;
+}
+/* Header */
+
+li{
+    list-style-type: none;
+}
+
+
+
+.title{
+    grid-area:title ;
+    
+
+}
+.navHeader{
+    grid-area: navHeader;
+}
+main{
+    grid-area: main;
+}
+footer{
+    grid-area: footer;
+    
+}
+body{
+    grid-template-columns: 1fr;
+    grid-template-rows: 20vh 10vh 80vh 30vh;
+    grid-template-areas: "title" "navHeader" "main" "footer";
+}
+.title {
+    justify-items: space-around;
+    align-items: center;
+    align-content: space-around;
+    align-self: center;
+    flex-wrap: nowrap;
+}
+.navHeader li {
+        
+        width: 225px;
+        height: 46px;
+    
+        text-decoration: none;
+        font-family: Prata, serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 41px;
+    
+        color: #000000;
+    margin-right: 150px ;
+    flex-direction: row;
+    justify-content: center;
+    }
+main{
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+
+
+@media screen and (min-width: 768px){
+    body{
+        grid-template-columns: 1fr;
+        grid-template-rows: 10vh 10vh 80vh 30vh;
+        grid-template-areas: "title" "navHeader" "main" "footer";
+    }
+    #logoMarca{
+        transform:rotate(270deg);
+        position: fixed;
+        width: 387px;
+        height: 55px;
+        top: 370px;
+        left: -160px;
+        background-color:#D1C7AD  ;
+        z-index: 10;
+    }
+    .hrHorFooter{
+        width: 1440px;
+        height: 0px;
+        margin-left: 0px;
+    
+        border: 1px solid #000000;
+        transform: rotate(-0.08deg);
+    }
+    .hrVer{
+        position: fixed;
+        height: 100%;
+        top:0px;
+        transform: rotate(-0.08deg);
+        border: 1px solid #000000;
+        transform: rotate(-0.08deg);
+        left: 30px;
+    }
+    #logoMarca{
+        transform:rotate(270deg);
+        position: fixed;
+        width: 387px;
+        height: 55px;
+        top: 370px;
+        left: -160px;
+        background-color:#D1C7AD  ;
+        z-index: 10;
+    }
+    .navHeader{
+        margin-left: 230px;
+    }
+    .navHeader li {
+        display:inline-block;
+        width: 225px;
+        height: 46px;
+    
+        text-decoration: none;
+        font-family: Prata, serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 41px;
+    
+        color: #000000;
+    margin-right: 150px ;
+    }
+    a{
+        text-decoration: none;
+        color: #000000;
+    }
+    .imgCart{
+        width: 31px;
+        height: 31px;
+        margin-left: 30px;
+    
+    }
+    /* Footer */
+    
+    
+    footer{
+        height: 150px;
+       
+        margin-top: 50px;
+    }
+    footer section{
+        margin-left: 15%;
+        margin-top: 23px;
+        align-items: center;
+    }
+    footer section div{
+        display: inline-block;
+        margin-right: 300px;
+    }
+    #footerDivNav nav ul li{
+     text-align:center;
+    }
+    #footerDivIcons ul li{
+        display: inline-block;
+    }
+    #instaicon{
+        width: 24px;
+        height: auto;
+    }
+    #faceicon{
+        width: 24px;
+        height: auto;
+    }
+    #footerFillIn{
+        background-color: #70707057;
+    border-radius: 3px;
+    }
+    #footerSubmit{
+    background-color: #A18151;
+    border-radius: 3px;
+    background-size: auto;
+    size: 20px;
+    }
+    
+    /* index.html*/
+    
+    #imgIndex{
+        margin-top: 30px;
+        margin-left: 100px;
+        right: 10px;
+        width: 90%;
+        height: auto;
+    
+    }
+    
+    /* shop.html */
+    
+    #shopSections li a img{
+        margin-top: 70px;
+        margin-left: 100px;
+        margin-bottom: 70px;
+        right: 10px;
+        width: 90%;
+    
+    
+    }
+    #shopSections li {
+       
+        width: 30%;
+        display: inline-block;
+        justify-content: space-between;
+    }
+    #shopSections li a img {
+        border: #000000 solid ;
+    }
+    
+    
+    /* products.html */
+    
+    #productsList {
+        margin-top: 70px;
+        margin-left: 140px;
+        margin-bottom: 70px;
+        right: 10px;
+        width: 90%;
+        left: 50px;
+        align-items: center;
+    }
+    #productsList div{
+        width: 27%;
+        display: inline-block;
+        justify-content:space-around ;
+      right: 350px;
+        margin-bottom: 30px;
+        margin-right: 50px;
+        text-align: center;
+        color: rgb(77, 46, 0);
+        font-size: 1rem;
+    
+    }
+    #productsList div img{
+        width: 320px;
+        
+    }
+    
+    .plus{
+        color: rgb(138, 144, 155);
+        font-size: 3rem;
+        border:#D1C7AD;
+        background-color:#70707065 ;
+        border-radius: 50px;
+        align-items: center;
+    }
+    
+    
+    /* contactus.html */
+    
+    #form{
+        margin-top: 70px;
+        margin-left: 140px;
+        width: 80%;
+    display: inline-block;
+    margin-bottom: 100px;
+    
+    }
+    #form input,select,textarea{
+        align-items: center;
+        background-color: #92754e;
+        margin-left: 10px;
+        display: inline;
+        margin-left: 470px;
+        color: azure;
+        display: block;
+       
+    }
+    #form input,select{
+        width: 200px;
+        height: 40px;
+        border-top-left-radius: 30px;
+        margin-bottom: 10px;
+    }
+    #checkboxText{
+     color: black;
+    }
+    fieldset{
+        margin: 400px;
+        
+        align-items:center;
+        display:contents;
+         justify-content:space-between;
+    }
+    #wppButton{
+        background-color: yellowgreen;
+        margin-left: 520px;
+        margin-top: 200px;
+        width: 3000px;
+        height: 40px;
+      border: 1px black solid ;
+    }
+    
+    .aboutUs{
+        display: inline-block;
+    
+    }
+    #parrafoAboutUs{
+        width: 80%;
+        margin-left: 150px;
+        margin-top: 40px;
+        font-size: 1.5rem;
+    }
+    #gallery{
+        box-sizing: border-box;
+        margin-left:120px ;
+    }
+    #gallery img{
+        width: 24%;
+    }
+    #spotify {
+        margin-left: 350px ;
+    
+    }
+    #map{
+        margin-left: 465px ;
+    }
+    
+}

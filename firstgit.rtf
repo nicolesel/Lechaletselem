@@ -1,0 +1,373 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2578
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red159\green160\blue28;
+\red180\green36\blue25;\red46\green174\blue187;\red47\green180\blue29;}
+{\*\expandedcolortbl;;\csgray\c0;\csgray\c100000;\cssrgb\c68468\c68012\c14208;
+\cssrgb\c76409\c21698\c12524;\cssrgb\c20196\c73240\c78250;\cssrgb\c20238\c73898\c14947;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f0\fs22 \cf2 \CocoaLigature0 Last login: Sun Mar 20 16:35:44 on ttys000\
+nicole@Air-de-Nicole-2 LechaletSelem % mkdir repo1\
+\'e7
+\f1\b \cf3 \cb2 %
+\f0\b0 \cf2 \cb1                                                                               nicole@Air-de-Nicole-2 LechaletSelem % mkdir repo1\
+mkdir: repo1: File exists\
+nicole@Air-de-Nicole-2 LechaletSelem % git --version\
+git version 2.33.0\
+nicole@Air-de-Nicole-2 LechaletSelem % git config --global user.name "Nicole Selem"\
+nicole@Air-de-Nicole-2 LechaletSelem % git config --global user.email " nicolesel@hotmail.com"\
+nicole@Air-de-Nicole-2 LechaletSelem % git config user.name\
+Nicole Selem\
+nicole@Air-de-Nicole-2 LechaletSelem % git config user.email\
+ nicolesel@hotmail.com\
+nicole@Air-de-Nicole-2 LechaletSelem % cd repo1   \
+nicole@Air-de-Nicole-2 repo1 % git init\
+\cf4 hint: Using 'master' as the name for the initial branch. This default branch name\cf2 \
+\cf4 hint: is subject to change. To configure the initial branch name to use in all\cf2 \
+\cf4 hint: of your new repositories, which will suppress this warning, call:\cf2 \
+\cf4 hint: \cf2 \
+\cf4 hint: 	git config --global init.defaultBranch <name>\cf2 \
+\cf4 hint: \cf2 \
+\cf4 hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and\cf2 \
+\cf4 hint: 'development'. The just-created branch can be renamed via this command:\cf2 \
+\cf4 hint: \cf2 \
+\cf4 hint: 	git branch -m <name>\cf2 \
+Initialized empty Git repository in /Users/nicole/Documents/StudyingByMySelf<3/CoderWD/LechaletSelem/repo1/.git/\
+nicole@Air-de-Nicole-2 repo1 % git status\
+On branch master\
+\
+No commits yet\
+\
+nothing to commit (create/copy files and use "git add" to track)\
+nicole@Air-de-Nicole-2 repo1 % git status\
+On branch master\
+\
+No commits yet\
+\
+Untracked files:\
+  (use "git add <file>..." to include in what will be committed)\
+	\cf5 FinalProyectWD \'96 Figma.webloc\cf2 \
+\
+nothing added to commit but untracked files present (use "git add" to track)\
+nicole@Air-de-Nicole-2 repo1 % git add .\
+nicole@Air-de-Nicole-2 repo1 % git commit -m "primera subida"\
+[master (root-commit) 2f38544] primera subida\
+ 1 file changed, 8 insertions(+)\
+ create mode 100644 FinalProyectWD \'96 Figma.webloc\
+nicole@Air-de-Nicole-2 repo1 % git status\
+On branch master\
+nothing to commit, working tree clean\
+nicole@Air-de-Nicole-2 repo1 % git log --oneline\
+\cf4 2f38544 (
+\f1\b \cf6 HEAD -> \cf7 master
+\f0\b0 \cf4 )\cf2  primera subida\
+nicole@Air-de-Nicole-2 repo1 % git log\
+\cf4 commit 2f385442c1aac3dc45923ac5013792da5de58cc8 (
+\f1\b \cf6 HEAD -> \cf7 master
+\f0\b0 \cf4 )\cf2 \
+Author: Nicole Selem <nicolesel@hotmail.com>\
+Date:   Sun Mar 20 22:22:34 2022 -0300\
+\
+    primera subida\
+nicole@Air-de-Nicole-2 repo1 % git checkout\
+nicole@Air-de-Nicole-2 repo1 % gitchecko\
+zsh: command not found: gitchecko\
+nicole@Air-de-Nicole-2 repo1 % git checkout 2f38544\
+Note: switching to '2f38544'.\
+\
+You are in 'detached HEAD' state. You can look around, make experimental\
+changes and commit them, and you can discard any commits you make in this\
+state without impacting any branches by switching back to a branch.\
+\
+If you want to create a new branch to retain commits you create, you may\
+do so (now or later) by using -c with the switch command. Example:\
+\
+  git switch -c <new-branch-name>\
+\
+Or undo this operation with:\
+\
+  git switch -\
+\
+Turn off this advice by setting config variable advice.detachedHead to false\
+\
+HEAD is now at 2f38544 primera subida\
+nicole@Air-de-Nicole-2 repo1 % git log --oneline\
+\cf4 2f38544 (
+\f1\b \cf6 HEAD
+\f0\b0 \cf4 , 
+\f1\b \cf7 master
+\f0\b0 \cf4 )\cf2  primera subida\
+nicole@Air-de-Nicole-2 repo1 % git branch\
+* \cf7 (HEAD detached at 2f38544)\cf2 \
+  master\
+nicole@Air-de-Nicole-2 repo1 % git branch develop\
+nicole@Air-de-Nicole-2 repo1 % git branch -1\
+error: unknown switch `1'\
+usage: git branch [<options>] [-r | -a] [--merged] [--no-merged]\
+   or: git branch [<options>] [-l] [-f] <branch-name> [<start-point>]\
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...\
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>\
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>\
+   or: git branch [<options>] [-r | -a] [--points-at]\
+   or: git branch [<options>] [-r | -a] [--format]\
+\
+Generic options\
+    -v, --verbose         show hash and subject, give twice for upstream branch\
+    -q, --quiet           suppress informational messages\
+    -t, --track           set up tracking mode (see git-pull(1))\
+    -u, --set-upstream-to <upstream>\
+                          change the upstream info\
+    --unset-upstream      unset the upstream info\
+    --color[=<when>]      use colored output\
+    -r, --remotes         act on remote-tracking branches\
+    --contains <commit>   print only branches that contain the commit\
+    --no-contains <commit>\
+                          print only branches that don't contain the commit\
+    --abbrev[=<n>]        use <n> digits to display object names\
+\
+Specific git-branch actions:\
+    -a, --all             list both remote-tracking and local branches\
+    -d, --delete          delete fully merged branch\
+    -D                    delete branch (even if not merged)\
+    -m, --move            move/rename a branch and its reflog\
+    -M                    move/rename a branch, even if target exists\
+    -c, --copy            copy a branch and its reflog\
+    -C                    copy a branch, even if target exists\
+    -l, --list            list branch names\
+    --show-current        show current branch name\
+    --create-reflog       create the branch's reflog\
+    --edit-description    edit the description for the branch\
+    -f, --force           force creation, move/rename, deletion\
+    --merged <commit>     print only branches that are merged\
+    --no-merged <commit>  print only branches that are not merged\
+    --column[=<style>]    list branches in columns\
+    --sort <key>          field name to sort on\
+    --points-at <object>  print only branches of the object\
+    -i, --ignore-case     sorting and filtering are case insensitive\
+    --format <format>     format to use for the output\
+\
+nicole@Air-de-Nicole-2 repo1 % git branch -l\
+* \cf7 (HEAD detached at 2f38544)\cf2 \
+  develop\
+  master\
+nicole@Air-de-Nicole-2 repo1 % git checkout develop\
+Switched to branch 'develop'\
+nicole@Air-de-Nicole-2 repo1 % git branch -l\
+* \cf7 develop\cf2 \
+  master\
+nicole@Air-de-Nicole-2 repo1 % git branch develop\
+fatal: A branch named 'develop' already exists.\
+nicole@Air-de-Nicole-2 repo1 % git branch -D develop\
+error: Cannot delete branch 'develop' checked out at '/Users/nicole/Documents/StudyingByMySelf<3/CoderWD/LechaletSelem/repo1'\
+nicole@Air-de-Nicole-2 repo1 % git branch -l\
+* \cf7 develop\cf2 \
+  master\
+nicole@Air-de-Nicole-2 repo1 % git branch master\
+fatal: A branch named 'master' already exists.\
+nicole@Air-de-Nicole-2 repo1 % git checkout master\
+Switched to branch 'master'\
+nicole@Air-de-Nicole-2 repo1 % git branch -l\
+  develop\
+* \cf7 master\cf2 \
+nicole@Air-de-Nicole-2 repo1 % git branch -D develop\
+Deleted branch develop (was 2f38544).\
+nicole@Air-de-Nicole-2 repo1 % git branch -l\
+* \cf7 master\cf2 \
+nicole@Air-de-Nicole-2 repo1 % git branch dev\
+nicole@Air-de-Nicole-2 repo1 % git branch -l\
+  dev\
+* \cf7 master\cf2 \
+nicole@Air-de-Nicole-2 repo1 % git checkout dev\
+nicole@Air-de-Nicole-2 repo1 % git checkout master\
+Switched to branch 'master'\
+nicole@Air-de-Nicole-2 repo1 % git merge dev\
+Already up to date.\
+nicole@Air-de-Nicole-2 repo1 % \
+\
+\
+\
+\
+\
+\
+Last login: Mon Mar 21 00:15:55 on ttys000\
+nicole@Air-de-Nicole-2 repo1 % git push\
+fatal: The current branch master has no upstream branch.\
+To push the current branch and set the remote as upstream, use\
+\
+    git push --set-upstream origin master\
+\
+nicole@Air-de-Nicole-2 repo1 % git log --oneline\
+\cf4 2f38544 (
+\f1\b \cf6 HEAD -> \cf7 master
+\f0\b0 \cf4 , 
+\f1\b \cf7 dev
+\f0\b0 \cf4 )\cf2  primera subida\
+nicole@Air-de-Nicole-2 repo1 % git remote add origin\
+usage: git remote add [<options>] <name> <url>\
+\
+    -f, --fetch           fetch the remote branches\
+    --tags                import all tags and associated objects when fetching\
+                          or do not fetch any tag at all (--no-tags)\
+    -t, --track <branch>  branch(es) to track\
+    -m, --master <branch>\
+                          master branch\
+    --mirror[=(push|fetch)]\
+                          set up remote as a mirror to push to or fetch from\
+\
+nicole@Air-de-Nicole-2 repo1 % git remote add origin https://github.com/nicolesel/repo1.git\
+error: remote origin already exists.\
+nicole@Air-de-Nicole-2 repo1 % git push origin master\
+Password for 'https://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@github.com': \
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.\
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.\
+fatal: Authentication failed for 'https://github.com/nicolesel/repo1/'\
+nicole@Air-de-Nicole-2 repo1 % git remote add origin https://github.com/nicolesel/repo1.git\
+error: remote origin already exists.\
+nicole@Air-de-Nicole-2 repo1 % git remote add origin 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\
+error: remote origin already exists.\
+nicole@Air-de-Nicole-2 repo1 % git push origin master\
+Password for 'https://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@github.com': \
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.\
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.\
+fatal: Authentication failed for 'https://github.com/nicolesel/repo1/'\
+nicole@Air-de-Nicole-2 repo1 % git push origin master\
+Password for 'https://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@github.com': \
+Enumerating objects: 3, done.\
+Counting objects: 100% (3/3), done.\
+Delta compression using up to 4 threads\
+Compressing objects: 100% (3/3), done.\
+Writing objects: 100% (3/3), 472 bytes | 118.00 KiB/s, done.\
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0\
+To https://github.com/nicolesel/repo1\
+ * [new branch]      master -> master\
+nicole@Air-de-Nicole-2 repo1 % git config user.name \
+Nicole Selem\
+nicole@Air-de-Nicole-2 repo1 % git config user.email\
+ nicolesel@hotmail.com\
+nicole@Air-de-Nicole-2 repo1 % \
+\
+\
+\
+Last login: Mon Mar 21 00:15:55 on ttys000\
+nicole@Air-de-Nicole-2 repo1 % git push\
+fatal: The current branch master has no upstream branch.\
+To push the current branch and set the remote as upstream, use\
+\
+    git push --set-upstream origin master\
+\
+nicole@Air-de-Nicole-2 repo1 % git log --oneline\
+\cf4 2f38544 (
+\f1\b \cf6 HEAD -> \cf7 master
+\f0\b0 \cf4 , 
+\f1\b \cf7 dev
+\f0\b0 \cf4 )\cf2  primera subida\
+nicole@Air-de-Nicole-2 repo1 % git remote add origin\
+usage: git remote add [<options>] <name> <url>\
+\
+    -f, --fetch           fetch the remote branches\
+    --tags                import all tags and associated objects when fetching\
+                          or do not fetch any tag at all (--no-tags)\
+    -t, --track <branch>  branch(es) to track\
+    -m, --master <branch>\
+                          master branch\
+    --mirror[=(push|fetch)]\
+                          set up remote as a mirror to push to or fetch from\
+\
+nicole@Air-de-Nicole-2 repo1 % git remote add origin https://github.com/nicolesel/repo1.git\
+error: remote origin already exists.\
+nicole@Air-de-Nicole-2 repo1 % git push origin master\
+Password for 'https://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@github.com': \
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.\
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.\
+fatal: Authentication failed for 'https://github.com/nicolesel/repo1/'\
+nicole@Air-de-Nicole-2 repo1 % git remote add origin https://github.com/nicolesel/repo1.git\
+error: remote origin already exists.\
+nicole@Air-de-Nicole-2 repo1 % git remote add origin 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\
+error: remote origin already exists.\
+nicole@Air-de-Nicole-2 repo1 % git push origin master\
+Password for 'https://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@github.com': \
+remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.\
+remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.\
+fatal: Authentication failed for 'https://github.com/nicolesel/repo1/'\
+nicole@Air-de-Nicole-2 repo1 % git push origin master\
+Password for 'https://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@github.com': \
+Enumerating objects: 3, done.\
+Counting objects: 100% (3/3), done.\
+Delta compression using up to 4 threads\
+Compressing objects: 100% (3/3), done.\
+Writing objects: 100% (3/3), 472 bytes | 118.00 KiB/s, done.\
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0\
+To https://github.com/nicolesel/repo1\
+ * [new branch]      master -> master\
+nicole@Air-de-Nicole-2 repo1 % git config user.name \
+Nicole Selem\
+nicole@Air-de-Nicole-2 repo1 % git config user.email\
+ nicolesel@hotmail.com\
+nicole@Air-de-Nicole-2 repo1 % git pull origin master\
+remote: Enumerating objects: 4, done.\
+remote: Counting objects: 100% (4/4), done.\
+remote: Compressing objects: 100% (2/2), done.\
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0\
+Unpacking objects: 100% (3/3), 683 bytes | 170.00 KiB/s, done.\
+From https://github.com/nicolesel/repo1\
+ * branch            master     -> FETCH_HEAD\
+   2f38544..61316d4  master     -> origin/master\
+Updating 2f38544..61316d4\
+Fast-forward\
+ README.md | 1 \cf7 +\cf2 \
+ 1 file changed, 1 insertion(+)\
+ create mode 100644 README.md\
+nicole@Air-de-Nicole-2 repo1 % git commit dev\
+error: pathspec 'dev' did not match any file(s) known to git\
+nicole@Air-de-Nicole-2 repo1 % git branch -l\
+  dev\
+* \cf7 master\cf2 \
+nicole@Air-de-Nicole-2 repo1 % git add .  \
+nicole@Air-de-Nicole-2 repo1 % git commit -m "gitignore"\
+[master 44e41fc] gitignore\
+ 1 file changed, 8 insertions(+)\
+ create mode 100644 .gitignore.rtf\
+nicole@Air-de-Nicole-2 repo1 % git log --oneline\
+\cf4 44e41fc (
+\f1\b \cf6 HEAD -> \cf7 master
+\f0\b0 \cf4 )\cf2  gitignore\
+\cf4 61316d4 (
+\f1\b \cf5 origin/master
+\f0\b0 \cf4 )\cf2  Create README.md\
+\cf4 2f38544 (
+\f1\b \cf7 dev
+\f0\b0 \cf4 )\cf2  primera subida\
+nicole@Air-de-Nicole-2 repo1 % git push origin master\
+Enumerating objects: 4, done.\
+Counting objects: 100% (4/4), done.\
+Delta compression using up to 4 threads\
+Compressing objects: 100% (3/3), done.\
+Writing objects: 100% (3/3), 588 bytes | 588.00 KiB/s, done.\
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0\
+To https://github.com/nicolesel/repo1\
+   61316d4..44e41fc  master -> master\
+nicole@Air-de-Nicole-2 repo1 % git checkout dev\
+Switched to branch 'dev'\
+nicole@Air-de-Nicole-2 repo1 % git add .\
+nicole@Air-de-Nicole-2 repo1 % git commit -m "subida shop"\
+[dev 98a1791] subida shop\
+ 1 file changed, 114 insertions(+)\
+ create mode 100644 shop.html\
+nicole@Air-de-Nicole-2 repo1 % git push origin dev\
+Enumerating objects: 4, done.\
+Counting objects: 100% (4/4), done.\
+Delta compression using up to 4 threads\
+Compressing objects: 100% (3/3), done.\
+Writing objects: 100% (3/3), 1.15 KiB | 587.00 KiB/s, done.\
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0\
+remote: \
+remote: Create a pull request for 'dev' on GitHub by visiting:\
+remote:      https://github.com/nicolesel/repo1/pull/new/dev\
+remote: \
+To https://github.com/nicolesel/repo1\
+ * [new branch]      dev -> dev\
+nicole@Air-de-Nicole-2 repo1 % \
+\
+\
+}
