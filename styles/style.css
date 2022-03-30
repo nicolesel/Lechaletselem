@@ -48,8 +48,9 @@ a:hover{
     animation:animate__pulse;
     animation-duration: 2s;
 }
-.imgCart:hover{
-    transform: rotate(0.05turn);
+
+hr{
+    color:black;
 }
 
 @media screen and (max-width: 768px){
@@ -83,11 +84,7 @@ a:hover{
         margin: 2px;
     }
     .navHeader{
-        width: 100vw;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
+        
     }
     .imgCart{
         width: 4vw;
@@ -250,7 +247,7 @@ a:hover{
         display: grid;
         grid-template-columns: 10vw 90vw;
         grid-template-rows: 15vh auto 30vh;
-        grid-template-areas: "header header" 
+        grid-template-areas: "title header" 
         "title main"
         "title footer";
     }
@@ -279,22 +276,18 @@ a:hover{
     }
     .hrVer{
         position: fixed;
-        height: 100%;
-        top:0px;
+        height: 100vh !important;
+        top:-20px;
         transform: rotate(-0.08deg);
         border: 1px solid #000000;
         transform: rotate(-0.08deg);
         left: 30px;
     }
     .navHeader{
-        display: inline;
-        flex-direction: row;
-    
- 
-        align-items: center;
-        width: 100vw;
-
+        width: 5000px;
+        top: -20px !important;
     }
+    /*
     .navHeader li{
         flex-direction: row;
         justify-content: space-between;
@@ -313,6 +306,7 @@ a:hover{
         display: block;
     
     }
+    */
     #imgIndex{
         
         left: 5vw;
