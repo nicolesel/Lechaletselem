@@ -1,0 +1,44 @@
+
+body{
+    background-color: $bgColor;
+    text-decoration: none;
+    font-family: $textFamily, serif;
+    font-style: normal;
+    font-weight: normal;
+    color: $commonText;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-items: center;
+    flex-wrap:wrap ;
+    h1,h2,h3{
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 80px;
+        color:$wowText;
+    }
+    li{
+        list-style-type: none;
+    }
+    a{
+        text-decoration: none;
+        color: #000000;
+        text-align: none;
+        a:hover{
+            color:$wowText !important;
+        }
+    }
+    .hover-white:hover{
+        background-color: $wowText;
+        color:#555048;
+        font-weight: 600;
+    }
+    
+    hr{
+        color:$commonText;
+    }
+}
+
+
+
+
