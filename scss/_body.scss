@@ -39,6 +39,14 @@ body{
     }
 }
 
-
-
+@mixin icon ($width,$height){
+    width:$width;
+    height:$height;
+}
+#faceicon{
+    @include icon(18px,auto);
+}
+#instaicon{
+    @extend #faceicon;
+}
 
