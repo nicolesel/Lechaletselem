@@ -113,13 +113,16 @@
         #footerDivIcons ul li{
             display: inline-block;
         }
+        @mixin icon($width,$height){
+            width:$width;
+            height:$height;
+        }
         #instaicon{
-            width: 18px;
-            height: auto;
+            @include icon(18px,auto);
+
         }
         #faceicon{
-            width: 18px;
-            height: auto;
+            @extend #instaicon;
         }
         #footerFillIn{
             background-color: #70707057;

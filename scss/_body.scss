@@ -22,7 +22,7 @@ body{
     }
     a{
         text-decoration: none;
-        color: #000000;
+        color: map-get($colors, text);
         text-align: none;
         a:hover{
             color:$wowText !important;
