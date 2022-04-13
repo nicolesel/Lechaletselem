@@ -29,7 +29,7 @@ body{
         }
     }
     .hover-white:hover{
-        background-color: $wowText;
+        background-color: $wowText !important;
         color:#555048;
         font-weight: 600;
     }
