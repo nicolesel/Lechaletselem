@@ -49,4 +49,15 @@ body{
 #instaicon{
     @extend #faceicon;
 }
-
+footer{
+    text-align: center;
+    #footerFillIn{
+        width: 70%;
+        margin-bottom: 10px;
+    }
+    #footerSubmit{
+        color: beige;
+        padding: 2px;
+        
+    }
+}

@@ -1,14 +1,24 @@
 @media screen and (max-width: 768px){
-    .title{
-        grid-area: title;
-        img{
-            width: 98vw;
+    header{
+        display: flex;
+        align-items: center;
+
+        .title{
+            grid-area: title;
             margin: 2px;
+            align-items: center;
+            img{
+                width: 70%;
+                justify-self: center;
+                
+               
+            }
+        }
+        .navHeader{
+            grid-area: header;
         }
     }
-    .navHeader{
-        grid-area: header;
-    }
+    
     main{
         grid-area: main;
         justify-content: center;
